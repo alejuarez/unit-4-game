@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crystals Collector!</title>
+    <link rel="reset" type="reset/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link img="images" type="images" href="assets/images/" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header id="masthead">
+        <h1>Crystals Collector!</h1>
+    </header>
+
+    <div id="main-container" class="container">
+        <div id="guessGame">
+            <h2>Instructions</h2>
+            <p>- Number to Guess is a random number given to you at the start of each game</p>
+            <p>- Every crystal you select has a different value at the beginning of each game. The value of the crystal will
+                be added to Your Number when you click on it</p>
+            <p>- You win the game by matching Your Number to Number to Guess</p>
+            <p>- You lose the game if Your Number goes above Number to Guess</p>
+        </div>
+
+        <section class="main-section">
+            <h3>Number to Guess:
+                <span id="numberToguess"></span>
+            </h3>
+            <h3>Your Number:
+                <span id="userGuess"></span>
+            </h3>
+            <h3>Wins:
+                <span id="wins"></span>
+            </h3>
+            <h3>Losses:
+                <span id="losses"></span>
+            </h3>
+            <span id="displaymsg"></span>
+            <br>
+            <span id="crystal1">
+                <img src="assets/images/gem blue.jpg" value="data-crystalNum" class="auth-image" alt="saphire">
+            </span>
+            <span id="crystal2">
+                <img src="assets/images/gem green.jpg" value="crystalNum" class="auth-image" alt="emerald">
+            </span>
+            <span id="crystal3">
+                <img src="assets/images/gem orange.jpg" value="crystalNum" class="auth-image" alt="citrine">
+            </span>
+            <span id="crystal4">
+                <img src="assets/images/gem purple.jpg" value="crystalNum" class="auth-image" alt="amethyst">
+            </span>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Copright 2018</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="assets/javascript/game.js"> </script>
+
+</body>
+
+</html>
